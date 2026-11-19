@@ -13,6 +13,10 @@
 # production
 /build
 
+# local database state
+/data/coy_db.json
+/data/*.tmp
+
 # misc
 .DS_Store
 *.pem
