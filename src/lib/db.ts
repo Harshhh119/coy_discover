@@ -58,7 +58,7 @@ class DatabaseService {
     try {
       this.ensureDirectory();
       const tmpFile = `${DB_FILE}.tmp`;
-      fs.writeFileSync(tmpFile, JSON.stringify(dataToSave, null, 2), 'utf-8');
+      fs.writeFileSync(tmpFile, JSON.stringify(dataToSave, null, 2) + '\n', 'utf-8');
       fs.renameSync(tmpFile, DB_FILE);
     } catch (err) {
       console.error('Failed to write database file:', err);
