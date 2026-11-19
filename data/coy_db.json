@@ -1,0 +1,518 @@
+{
+  "profiles": [
+    {
+      "id": "coy_usr_01",
+      "name": "Anya Sharma",
+      "age": 22,
+      "photo": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80",
+      "bio": "Architecture student who lives on iced oat cortados and 35mm film grain. Tell me your favorite building.",
+      "city": "San Francisco, CA",
+      "college": "UC Berkeley",
+      "interests": [
+        "Architecture",
+        "Film Photography",
+        "Iced Matcha",
+        "Bouldering"
+      ],
+      "hasLikedUser": false
+    },
+    {
+      "id": "coy_usr_02",
+      "name": "Rohan Mehta",
+      "age": 23,
+      "photo": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=800&q=80",
+      "bio": "Software engineer by day, indie synth-pop producer by night. Currently hunting the best ramen in town.",
+      "city": "Seattle, WA",
+      "college": "University of Washington",
+      "interests": [
+        "Synthesizers",
+        "Ramen",
+        "Indie Rock",
+        "Mechanical Keyboards"
+      ],
+      "hasLikedUser": true
+    },
+    {
+      "id": "coy_usr_03",
+      "name": "Maya Lin",
+      "age": 21,
+      "photo": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80",
+      "bio": "Obsessed with print design, pottery wheels, and making Sunday farmers market pilgrimages.",
+      "city": "New York, NY",
+      "college": "Parsons School of Design",
+      "interests": [
+        "Ceramics",
+        "Graphic Design",
+        "Farmers Markets",
+        "Museum Hopping"
+      ],
+      "hasLikedUser": false
+    },
+    {
+      "id": "coy_usr_04",
+      "name": "Kavya Nair",
+      "age": 24,
+      "photo": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80",
+      "bio": "Biotech researcher & weekend trail runner. Always down to debate whether oat milk or almond milk reigns supreme.",
+      "city": "Boston, MA",
+      "college": "MIT",
+      "interests": [
+        "Trail Running",
+        "Biohacking",
+        "Podcasts",
+        "Specialty Coffee"
+      ],
+      "hasLikedUser": false
+    },
+    {
+      "id": "coy_usr_05",
+      "name": "Lucas Silva",
+      "age": 23,
+      "photo": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80",
+      "bio": "Documentary filmmaker & vinyl collector. If you appreciate 70s bossa nova, we will get along very well.",
+      "city": "Austin, TX",
+      "college": "UT Austin",
+      "interests": [
+        "Bossa Nova",
+        "Vinyl Records",
+        "Film Festivals",
+        "Vintage Clothing"
+      ],
+      "hasLikedUser": true
+    },
+    {
+      "id": "coy_usr_06",
+      "name": "Elena Rostova",
+      "age": 22,
+      "photo": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=80",
+      "bio": "Literature nerd & tea enthusiast. I judge cafes solely by their playlists and natural light.",
+      "city": "Chicago, IL",
+      "college": "Northwestern",
+      "interests": [
+        "Creative Writing",
+        "Bookstores",
+        "Matcha Latte",
+        "Art History"
+      ],
+      "hasLikedUser": false
+    },
+    {
+      "id": "coy_usr_07",
+      "name": "Kabir Patel",
+      "age": 25,
+      "photo": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
+      "bio": "Product manager who believes every problem can be solved with a Notion doc and a sprint.",
+      "city": "Bangalore, India",
+      "college": "IIT Bombay",
+      "interests": [
+        "Startups",
+        "Badminton",
+        "Product Design",
+        "Filter Coffee"
+      ],
+      "hasLikedUser": false
+    },
+    {
+      "id": "coy_usr_08",
+      "name": "Zoe Campbell",
+      "age": 21,
+      "photo": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=800&q=80",
+      "bio": "Marine biology student. Certified diver, ocean advocate, and lover of spicy street food.",
+      "city": "San Diego, CA",
+      "college": "UC San Diego",
+      "interests": [
+        "Scuba Diving",
+        "Marine Biology",
+        "Tacos",
+        "Surfing"
+      ],
+      "hasLikedUser": false
+    },
+    {
+      "id": "coy_usr_09",
+      "name": "Devansh Verma",
+      "age": 23,
+      "photo": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=800&q=80",
+      "bio": "Classical guitarist playing acoustic covers. Looking for someone to sit in rooftop cafes with.",
+      "city": "Delhi, India",
+      "college": "Delhi University",
+      "interests": [
+        "Acoustic Guitar",
+        "Poetry",
+        "Rooftop Cafes",
+        "Night Drives"
+      ],
+      "hasLikedUser": true
+    },
+    {
+      "id": "coy_usr_10",
+      "name": "Chloe Dubois",
+      "age": 24,
+      "photo": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80",
+      "bio": "Pastry chef in training. Will trade homemade sourdough and chocolate croissants for good conversation.",
+      "city": "Montreal, QC",
+      "college": "McGill University",
+      "interests": [
+        "Baking",
+        "French Cinema",
+        "Croissants",
+        "Wine Tasting"
+      ],
+      "hasLikedUser": false
+    },
+    {
+      "id": "coy_usr_11",
+      "name": "Arjun Sen",
+      "age": 24,
+      "photo": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=800&q=80",
+      "bio": "Fintech analyst, amateur marathon runner. Always on pace for the next PR and a double espresso.",
+      "city": "New York, NY",
+      "college": "Columbia University",
+      "interests": [
+        "Marathon Training",
+        "Espresso",
+        "Chess",
+        "Personal Finance"
+      ],
+      "hasLikedUser": false
+    },
+    {
+      "id": "coy_usr_12",
+      "name": "Tara Deshmukh",
+      "age": 22,
+      "photo": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=800&q=80",
+      "bio": "Urban planning student with a passion for bike-friendly cities and vintage flea market finds.",
+      "city": "Mumbai, India",
+      "college": "St. Xavier's College",
+      "interests": [
+        "Cycling",
+        "Flea Markets",
+        "Sustainable Urbanism",
+        "Indie Pop"
+      ],
+      "hasLikedUser": false
+    },
+    {
+      "id": "coy_usr_13",
+      "name": "Marcus Kim",
+      "age": 23,
+      "photo": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=800&q=80",
+      "bio": "UI designer who obsesses over button micro-interactions and kerning. Let's get boba and critique app layouts.",
+      "city": "Los Angeles, CA",
+      "college": "UCLA",
+      "interests": [
+        "Typography",
+        "Boba",
+        "Sneakers",
+        "Street Photography"
+      ],
+      "hasLikedUser": false
+    },
+    {
+      "id": "coy_usr_14",
+      "name": "Simran Gill",
+      "age": 22,
+      "photo": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80",
+      "bio": "Law student by weekday, standup comedy open-micer by weekend. I promise I have better jokes in person.",
+      "city": "Toronto, ON",
+      "college": "University of Toronto",
+      "interests": [
+        "Standup Comedy",
+        "Debate",
+        "Podcasts",
+        "Hot Cocoa"
+      ],
+      "hasLikedUser": true
+    },
+    {
+      "id": "coy_usr_15",
+      "name": "Mateo Morales",
+      "age": 25,
+      "photo": "https://images.unsplash.com/photo-1463453091185-61582044d556?auto=format&fit=crop&w=800&q=80",
+      "bio": "Climbing gym regular, rock hound, and camp cook. Looking for a partner for spontaneous camping trips.",
+      "city": "Denver, CO",
+      "college": "CU Boulder",
+      "interests": [
+        "Bouldering",
+        "Backpacking",
+        "Campfire Cooking",
+        "Astro-photography"
+      ],
+      "hasLikedUser": false
+    },
+    {
+      "id": "coy_usr_16",
+      "name": "Priya Kapoor",
+      "age": 23,
+      "photo": "https://images.unsplash.com/photo-1548142813-c348350df52b?auto=format&fit=crop&w=800&q=80",
+      "bio": "Data scientist who analyzes dating app trends for fun. Ironically looking for genuine offline sparks.",
+      "city": "London, UK",
+      "college": "Imperial College London",
+      "interests": [
+        "Data Science",
+        "Live Theater",
+        "Cocktail Making",
+        "Museums"
+      ],
+      "hasLikedUser": false
+    },
+    {
+      "id": "coy_usr_17",
+      "name": "Leo Van Der Beek",
+      "age": 24,
+      "photo": "https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?auto=format&fit=crop&w=800&q=80",
+      "bio": "Dutch industrial designer living in SF. Cycling, minimal furniture, and espresso roasts are my religion.",
+      "city": "San Francisco, CA",
+      "college": "Stanford University",
+      "interests": [
+        "Industrial Design",
+        "Bikes",
+        "Pour Over Coffee",
+        "Minimalism"
+      ],
+      "hasLikedUser": false
+    },
+    {
+      "id": "coy_usr_18",
+      "name": "Ananya Roy",
+      "age": 21,
+      "photo": "https://images.unsplash.com/photo-1524250502761-1ac6f2e30d43?auto=format&fit=crop&w=800&q=80",
+      "bio": "Psychology major. Fascinated by human decision-making and why people always choose the middle elevator.",
+      "city": "Pune, India",
+      "college": "Symbiosis International",
+      "interests": [
+        "Psychology",
+        "Dog Walking",
+        "Board Games",
+        "Matcha"
+      ],
+      "hasLikedUser": true
+    },
+    {
+      "id": "coy_usr_19",
+      "name": "Julian Hayes",
+      "age": 25,
+      "photo": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80",
+      "bio": "Environmental economist. Trying to save coral reefs while curating the warmest indie folk playlists.",
+      "city": "Portland, OR",
+      "college": "Reed College",
+      "interests": [
+        "Indie Folk",
+        "Sustainability",
+        "Hiking",
+        "Cider Tasting"
+      ],
+      "hasLikedUser": false
+    },
+    {
+      "id": "coy_usr_20",
+      "name": "Mira Iyer",
+      "age": 22,
+      "photo": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80",
+      "bio": "Classical Carnatic vocalist exploring electronic fusion beats. Let's exchange our favorite underrated songs.",
+      "city": "Chennai, India",
+      "college": "Madras Christian College",
+      "interests": [
+        "Vocal Music",
+        "Sound Design",
+        "Chai",
+        "Art Galleries"
+      ],
+      "hasLikedUser": false
+    },
+    {
+      "id": "coy_usr_21",
+      "name": "Ethan Brooks",
+      "age": 23,
+      "photo": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=800&q=80",
+      "bio": "Aerospace engineering grad. Building drone autonomy systems and learning to cook authentic carbonara.",
+      "city": "Austin, TX",
+      "college": "Texas A&M",
+      "interests": [
+        "Drones",
+        "Cooking",
+        "Formula 1",
+        "Night Sky"
+      ],
+      "hasLikedUser": false
+    },
+    {
+      "id": "coy_usr_22",
+      "name": "Dia Mukherjee",
+      "age": 23,
+      "photo": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80",
+      "bio": "Journalist covering culture and tech. Fast walker, quick thinker, terrible at withholding movie spoilers.",
+      "city": "New York, NY",
+      "college": "NYU Stern",
+      "interests": [
+        "Journalism",
+        "Docuseries",
+        "Bagels",
+        "Tennis"
+      ],
+      "hasLikedUser": false
+    },
+    {
+      "id": "coy_usr_23",
+      "name": "Siddharth Rao",
+      "age": 24,
+      "photo": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=800&q=80",
+      "bio": "Robotics engineer with a golden retriever named Archimedes. Can be bribed with spicy chicken tacos.",
+      "city": "Atlanta, GA",
+      "college": "Georgia Tech",
+      "interests": [
+        "Golden Retrievers",
+        "Robotics",
+        "Tacos",
+        "Rock Climbing"
+      ],
+      "hasLikedUser": true
+    },
+    {
+      "id": "coy_usr_24",
+      "name": "Isabella Rossi",
+      "age": 22,
+      "photo": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80",
+      "bio": "Fashion merchandising student and thrift store champion. If it was made in 1998, I probably own it.",
+      "city": "Milan / London",
+      "college": "University of the Arts London",
+      "interests": [
+        "Thrifting",
+        "Vintage Fashion",
+        "Gelato",
+        "Photography"
+      ],
+      "hasLikedUser": false
+    },
+    {
+      "id": "coy_usr_25",
+      "name": "Aryan Joshi",
+      "age": 25,
+      "photo": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
+      "bio": "Physicist researching quantum computing. I can explain superposition, but not why socks disappear in the dryer.",
+      "city": "Boston, MA",
+      "college": "Harvard University",
+      "interests": [
+        "Quantum Physics",
+        "Sci-Fi Books",
+        "Chess",
+        "Tea Ceremonies"
+      ],
+      "hasLikedUser": false
+    },
+    {
+      "id": "coy_usr_26",
+      "name": "Nadia Chen",
+      "age": 21,
+      "photo": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=800&q=80",
+      "bio": "Culinary student and sourdough whisperer. My love language is feeding people and making them try new spices.",
+      "city": "San Francisco, CA",
+      "college": "Culinary Institute of America",
+      "interests": [
+        "Sourdough",
+        "Fermentation",
+        "Wine",
+        "Farmers Markets"
+      ],
+      "hasLikedUser": false
+    },
+    {
+      "id": "coy_usr_27",
+      "name": "Aditya Singhania",
+      "age": 23,
+      "photo": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=800&q=80",
+      "bio": "Guitarist in an alt-rock trio. I believe cold coffee on rainy mornings is an unmatched vibe.",
+      "city": "Mumbai, India",
+      "college": "IIT Delhi",
+      "interests": [
+        "Alt Rock",
+        "Music Production",
+        "Cold Brew",
+        "Monsoons"
+      ],
+      "hasLikedUser": true
+    },
+    {
+      "id": "coy_usr_28",
+      "name": "Sienna Clark",
+      "age": 22,
+      "photo": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80",
+      "bio": "Wildlife conservation volunteer. Most comfortable around mountains, wildflowers, and campfires.",
+      "city": "Salt Lake City, UT",
+      "college": "University of Utah",
+      "interests": [
+        "Wildlife Conservation",
+        "Hiking",
+        "Skiing",
+        "Star Gazing"
+      ],
+      "hasLikedUser": false
+    },
+    {
+      "id": "coy_usr_29",
+      "name": "Farhan Ali",
+      "age": 24,
+      "photo": "https://images.unsplash.com/photo-1463453091185-61582044d556?auto=format&fit=crop&w=800&q=80",
+      "bio": "Mobile dev who loves building slick 60fps animations. Looking for someone to test my prototypes on.",
+      "city": "Hyderabad, India",
+      "college": "BITS Pilani",
+      "interests": [
+        "Mobile Dev",
+        "Animation",
+        "Biryani",
+        "Formula 1"
+      ],
+      "hasLikedUser": false
+    },
+    {
+      "id": "coy_usr_30",
+      "name": "Rhea Nambiar",
+      "age": 23,
+      "photo": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=800&q=80",
+      "bio": "Coffee roaster and podcast addict. Tell me your top 3 podcast episodes and I'll tell you your personality type.",
+      "city": "Chicago, IL",
+      "college": "University of Chicago",
+      "interests": [
+        "Specialty Coffee",
+        "Podcasts",
+        "Film Noir",
+        "Running"
+      ],
+      "hasLikedUser": false
+    },
+    {
+      "id": "coy_usr_31",
+      "name": "Vihaan Bhatia",
+      "age": 24,
+      "photo": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=800&q=80",
+      "bio": "Game designer & 3D artist. I build virtual worlds and get lost in indie bookstores in real life.",
+      "city": "San Jose, CA",
+      "college": "San Jose State University",
+      "interests": [
+        "Game Design",
+        "3D Modeling",
+        "Indie Games",
+        "Boba"
+      ],
+      "hasLikedUser": true
+    },
+    {
+      "id": "coy_usr_32",
+      "name": "Meera Chawla",
+      "age": 22,
+      "photo": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80",
+      "bio": "Classical dancer & cognitive science major. I think in rhythms and debug code in my sleep.",
+      "city": "Delhi, India",
+      "college": "Ashoka University",
+      "interests": [
+        "Classical Dance",
+        "Cognitive Science",
+        "Book Clubs",
+        "Filter Coffee"
+      ],
+      "hasLikedUser": false
+    }
+  ],
+  "swipes": [],
+  "matches": []
+}
