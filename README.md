@@ -4,12 +4,7 @@ A standalone fullstack mobile-first application implementing the **"Discover"** 
 
 ---
 
-## Table of Contents
-1. [Part A: Product Teardown & Core Feature Proposals](#part-a-product-teardown--core-feature-proposals)
-   - [Overview of Coy's Core Mechanism](#overview-of-coys-core-mechanism)
-   - [Feature Proposal 1: Circle Hint (Privacy-Preserving Proximity Indicator)](#feature-proposal-1-circle-hint-privacy-preserving-proximity-indicator)
-   - [Feature Proposal 2: Mutual Icebreaker Unlock (Graduated Post-Match Protocol)](#feature-proposal-2-mutual-icebreaker-unlock-graduated-post-match-protocol)
-2. [Part B: "Discover" Tab Implementation](#part-b-discover-tab-implementation)
+"Discover" Tab Implementation](#part-b-discover-tab-implementation)
    - [Tech Stack](#tech-stack)
    - [Architecture & Core Privacy Guarantee](#architecture--core-privacy-guarantee)
    - [Key Features](#key-features)
@@ -19,62 +14,7 @@ A standalone fullstack mobile-first application implementing the **"Discover"** 
 
 ---
 
-## Part A: Product Teardown & Core Feature Proposals
-
-### Overview of Coy's Core Mechanism
-Coy (`app.getcoy.com`) is a double-blind crush-matching web app designed to eliminate the social fear of rejection. Users add up to 3 crushes by phone number or email. Recipients receive an anonymous notification stating that someone in their life has a crush on them. If and only if both individuals add each other, a mutual match is revealed. If either party never adds the other, zero identities are ever exposed.
-
-Key consumer touchpoints explored:
-- **Phone OTP Login:** Frictionless identity verification tying accounts directly to phone contacts.
-- **Adding a Crush:** Inputting phone/email with immediate feedback on remaining crush slots.
-- **Email Verification:** Security measure for notifications, backup recovery, and fraud deterrence.
-- **Invite Links:** Viral distribution mechanism allowing users to invite their social circle to Coy.
-- **Extra-Slots Screen:** Scarcity mechanism (3 default slots) encouraging referrals or micro-purchases to prevent spamming.
-
----
-
-### Feature Proposal 1: "Circle Hint" (Privacy-Preserving Social Proximity Indicator)
-
-#### 1. The Problem It Solves
-The single largest drop-off in Coy's user journey occurs at the anonymous notification stage. When an off-platform crush receives an SMS/WhatsApp saying *"Someone has a crush on you on Coy"*, two friction points arise:
-1. **Spam skepticism:** In an era of rampant phishing, generic anonymous links look like spam.
-2. **Analysis paralysis & Slot Scarcity:** A recipient with 300+ contacts and only 3 slots will hesitate to guess blindly or create an account, fearing they will waste their slots or that the sender isn't someone they know.
-
-#### 2. The Feature
-When adding a crush, the sender can optionally select **one verified broad circle tag** from their shared context (e.g., *"We go to the same college: UC Berkeley"*, *"From Stanford Class of '24"*, or *"Met at Hackathon"*). 
-The notification sent to the recipient includes this tag:
-> *"Someone from UC Berkeley has a secret crush on you on Coy! See if you feel the same way."*
-
-#### 3. Why It Is Required
-- **Increases Notification-to-Registration Conversion:** Transforms a suspicious cold message into an intriguing, relevant social signal.
-- **Guides Meaningful Slot Allocation:** Gives the recipient enough bounded context to use their 3 crush slots meaningfully without knowing *who* added them.
-
-#### 4. Privacy Edge Cases & Mitigation
-- **Deanonymization via Small Groups:** If a circle has only 2 or 3 people, attaching the tag immediately identifies the sender.
-- **Mitigation (k-Anonymity Threshold):** Tags are only permitted for verified cohorts with **at least 25 registered members** ($k \ge 25$). For individual or tiny clubs, circle tags are disabled.
-
----
-
-### Feature Proposal 2: "Mutual Icebreaker Unlock" (Graduated Post-Match Protocol)
-
-#### 1. The Problem It Solves
-In double-blind apps, the moment of a match triggers acute **vulnerability shock**. Both users know that they secretly added each other, which can lead to social paralysis (*"Now what do I say?"*, *"What if they only added me as a joke?"*). Leaving users stranded with raw phone numbers or social links often leads to frozen conversations and ghosting.
-
-#### 2. The Feature
-Upon a mutual match, Coy initiates an **ephemeral 48-hour icebreaker channel** inside the web app before prompting for phone/Instagram exchange:
-1. **Blind Micro-Prompts:** Both users answer 3 lighthearted prompts (e.g., *"Our ideal first hangout: A) Rooftop coffee, B) Speakeasy jazz, C) Night drive"*). Answers are revealed simultaneously once both answer.
-2. **Graduated Contact Reveal:** A single-click mutual consent button: *"Share Instagram / WhatsApp"*. Both users must press it for external contact details to be revealed.
-
-#### 3. Why It Is Required
-- **Converts Mutual Matches into Real Dates:** Replaces awkward silence with low-stakes playful momentum.
-- **Safety & Harassment Protection:** Protects users from premature off-platform contact sharing before mutual comfort is established.
-
-#### 4. Privacy Edge Cases & Mitigation
-- **Unilateral Exits & Safety:** Either user can discreetly unmatch or report at any time during the 48-hour window without alerting the other user to an aggressive block.
-
----
-
-## Part B: "Discover" Tab Implementation
+"Discover" Tab Implementation
 
 Built as a mobile-first standalone fullstack web application fulfilling all specifications from the Coy assignment.
 
